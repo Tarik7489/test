@@ -1,0 +1,35 @@
+<suite name="Suite" data-provider-thread-count="30">
+
+<parameter name ="qaURL" value="https://qa.mychargesavvy.com/auth/login"/>
+
+  <test thread-count="5" name="Test">
+ 
+ <listeners>
+ 	<listener class-name ="Analyser.TransformerAnalyser"/>
+ </listeners>
+ 
+ 
+    <classes>
+       <class name ="com.chargeSavvy.SavvyLoginTest"/>"    
+       <class name ="com.chargeSavvy.SearchMerchantTest"/>"    
+        <exclude name ="com.chargeSavvy.LogoutTest"/>"  
+        <exclude name ="com.chargeSavvy.CreateMerchantTest"/>"  
+        
+          
+      <groups> 
+      <run>
+     <include name="Smoke"/>
+      </run>
+      </groups>
+      
+      
+      
+    </classes>
+    
+   
+      
+    
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

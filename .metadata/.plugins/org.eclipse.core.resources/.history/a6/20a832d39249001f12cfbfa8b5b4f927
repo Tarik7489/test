@@ -1,0 +1,61 @@
+{
+	"env": {
+		"QA": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+	},
+	"Login": {
+		"ValidEmail": "ranjithachar1999@yopmail.com",
+		"ValidPassword": "Admin@123",
+		"ValidCode": "123456",
+		"InvalidEmail": "Test@gmail.com",
+		"InvalidPassword": "Admin@765"
+	},
+	"LoginPage": {
+		"validUserName": "admin",
+		"validPassword": "admin123",
+		"InvalidUserName": "admin1234"
+	},
+	"JobTitlePage": {
+		"JobTitle": "Admin Approved Adminstrator",
+		"Notes": "Welcome to My Profile"
+	},
+	"PayGradePage": {
+		"Name": "Admin Approved Adminstrator Latest"
+	},
+	"AddEmployeePage": {
+		"FirstName": "Admin",
+		"MiddleName": "Latest",
+		"LastName": "New"
+	},
+	"SignIn": {
+		"email": "testing1234@gmail.com",
+		"password": "Admin@123"
+	},
+	"ChargeSavvyLogin":{
+	"username":"Pavan",
+	"password":"Pavan@4939"
+	},
+	"CreateInventory":{
+	"SearchField": "Developer",
+	"POSName" : "Testing",
+	"Price": "20",
+	"Quantity": "3"
+	},
+	
+	"Berg":{
+	"portNumber": "4000",
+	"ipAddress" : "14.195.50.210",
+	"ringNumber": "15"
+	},
+	
+	"search":{
+	
+	"name": "Ideyalabs!23455"
+	},
+	
+	"BFSI_Login": {
+	
+	"email" : "tarika@ideyalabs.com",
+	"password": "Admin@123"
+	
+	}
+}

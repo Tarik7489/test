@@ -1,0 +1,31 @@
+package com.automation;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class isSelected {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		
+		driver.findElement(By.xpath("(//input[@name=\"radioButton\"])[1]")).click();
+		
+		boolean radio = driver.findElement(By.xpath("(//input[@name=\"radioButton\"])[100]")).isSelected();
+		
+		if(radio ==true) {
+			System.out.println("Radio button is selected");
+		}
+		else {
+			System.out.println("Radio button is not selected");
+		}
+		
+		driver.quit();
+	}
+
+}

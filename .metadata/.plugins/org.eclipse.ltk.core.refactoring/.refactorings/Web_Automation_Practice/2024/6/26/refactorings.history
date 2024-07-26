@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.automation.SelectActions&apos; to &apos;SelectDeselectActions&apos;&#x0D;&#x0A;- Original project: &apos;Web_Automation_Practice&apos;&#x0D;&#x0A;- Original element: &apos;com.automation.SelectActions&apos;&#x0D;&#x0A;- Renamed element: &apos;com.automation.SelectDeselectActions&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SelectActions&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;com.automation{SelectActions.java[SelectActions" matchStrategy="1" name="SelectDeselectActions" qualified="false" references="true" similarDeclarations="false" stamp="1719389144915" textual="false" version="1.0"/>
+</session>

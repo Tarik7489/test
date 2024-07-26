@@ -1,0 +1,69 @@
+package com.automation;
+
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class TestAll {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		//reverse number 
+		
+		
+		int actualNumber = 123456;
+		
+		//conver number to string
+		
+		String convertToString = String.valueOf(actualNumber);
+		
+		
+		StringBuilder builder = new StringBuilder(convertToString);
+		
+		String reverse =builder.reverse().toString();
+		
+		
+		//convert string to number
+		
+		
+		int convertToInt = Integer.parseInt(reverse);
+		
+		
+		System.out.println(convertToInt);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,82 @@
+package com.automation;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestAll {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		
+		
+	 WebDriver driver = new ChromeDriver();
+	 
+	 driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+	 
+	 driver.manage().window().maximize();
+	 
+	 
+	 //LOcate the table element
+	 
+	 WebElement table = driver.findElement(By.id("product"));
+	 
+	 //Get all the row from the table
+	 
+	 List<WebElement> rows = table.findElements(By.tagName("tr"));
+	 
+	 //Iterate over each row
+	 
+	 for(WebElement row :rows) {
+		 
+		 
+		 //get all the cells from the current row
+		 
+		 List<WebElement> cell =row.findElements(By.tagName("td"));
+		 
+		 
+		 //Iterate from each cell and get the text
+		 
+		 for(WebElement cells: cell) {
+			 
+			 String cellText =cells.getText();
+			 System.out.println(cellText + "|");
+		 }
+		 
+		 System.out.println();
+	 }
+	 
+	 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

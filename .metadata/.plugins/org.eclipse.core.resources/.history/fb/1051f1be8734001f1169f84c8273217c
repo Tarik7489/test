@@ -1,0 +1,38 @@
+package com.automation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import Analyser.TestPage;
+
+public class TestClass {
+
+	
+	WebDriver driver;
+	
+	TestPage test;
+	
+	
+	@Parameters("qa")
+	@BeforeMethod(groups = {"Regression"})
+	public void setup(String qa) {
+		
+		driver = new ChromeDriver();
+		test = new TestPage(driver);
+		
+		driver.manage().window().maximize();
+		
+		driver.get(qa);
+		
+	}
+	
+	@Test
+	public void loginToApplication(String username, String pwd) {
+		test.login(username, pwd);
+	}
+	
+	
+}

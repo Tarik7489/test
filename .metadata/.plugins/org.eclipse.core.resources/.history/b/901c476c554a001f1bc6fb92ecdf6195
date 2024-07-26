@@ -1,0 +1,14 @@
+package com.Web_Automation;
+
+import org.testng.annotations.BeforeMethod;
+
+public class RadioBtnTest {
+	
+	WebDriver driver;
+	
+	radio 
+	
+	
+	@BeforeMethod
+
+}

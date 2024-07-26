@@ -1,0 +1,36 @@
+<suite name="Suite">
+
+<parameter name ="qaURL" value="https://qa.mychargesavvy.com/auth/login"/>
+
+  <test name="Test">
+ 
+ <listeners>
+ 	<listener class-name ="Analyser.TransformerAnalyser"/>
+ </listeners>
+ 
+ 
+    <classes>
+       <class name ="com.chargeSavvy.SavvyLoginTest"/>"    
+       <exclude name ="com.chargeSavvy.SearchMerchantTest"/>"    
+        <exclude name ="com.chargeSavvy.LogoutTest"/>"  
+        <exclude name ="com.chargeSavvy.CreateMerchantTest"/>"  
+        
+          
+      <groups> 
+      <run>
+     <include name="Smoke"/>"
+     <include name = "Regression"/>
+      </run>
+      </groups>
+      
+      
+      
+    </classes>
+    
+   
+      
+    
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
